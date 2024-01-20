@@ -1,5 +1,5 @@
 function changeContent(event, circleNumber) {
-    const rightImg = document.querySelector('.better__right_img');
+    const leftImg = document.querySelector('.better__left_img');
     const betterName = document.getElementById('betterName');
     const betterColumnText = document.getElementById('betterColumnText');
     const betterColumnText2 = document.getElementById('betterColumnText2');
@@ -39,7 +39,7 @@ function changeContent(event, circleNumber) {
     }
 
     // Применение изменений
-    rightImg.src = imgSrc;
+    leftImg.src = imgSrc;
     betterName.textContent = name;
     betterColumnText.textContent = columnText;
     betterColumnText2.textContent = columnText2;
