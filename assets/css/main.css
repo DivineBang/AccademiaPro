@@ -645,7 +645,6 @@ ul,li{
 }
 .servizi__set{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 41px;
     padding-top: 50px;
@@ -831,6 +830,260 @@ ul,li{
     border: 0.5px solid #E7473C;
     color: #fff;
     background: #fd3324;
+}
+.esempi{
+    padding: 50px 0;
+}
+.esempi__set{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 60px;
+}
+.esempi__wrapp_title{
+    font-size: 30px;
+}
+.esempi__mix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+.esempi__right{
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.esempi__text{
+    font-size: 18px;
+    letter-spacing: 0.36px;
+}
+.quale{
+    padding: 50px 0;
+}
+.quale__set{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 60px;
+}
+.quale__wrapp_title{
+    font-size: 30px;
+}
+.quale__mix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+.quale__right{
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.quale__text{
+    font-size: 18px;
+    letter-spacing: 0.36px;
+}
+.quale__btn{
+    width: 135px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 0.5px solid #E7473C;
+    color: #E7473C;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin-top: auto;
+    text-align: center;
+}
+.quale__btn:hover{
+    width: 135px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 0.5px solid #E7473C;
+    color: #fff;
+    background: #fd3324;
+}
+.blog{
+    padding: 50px 0;
+}
+.blog__title{
+    font-size: 45px;
+    text-align: center;
+}
+.blog__kit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+.path{
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+   
+}
+.path__active{
+    color: #0072DC;
+    font-weight: 700;
+}
+.blind{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 20px;
+}
+.progetti{
+    padding: 50px 0;
+}
+.progetti__title{
+    color: #000;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+}
+.profile__set{
+    padding-top: 60px;
+}
+.profile__mix{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.profile__img{
+    border-radius: 100px;
+}
+.profile__title{
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+.profile__wrapp{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.project{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.project__colors{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+.project__first{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #F24033;
+}
+.project__second{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #0FA958;
+}
+.project__third{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: #2272FF;
+}
+.project__info_first{
+    font-family: "Open Sans";
+    font-size: 20px;
+    line-height: 120%; 
+    padding-bottom: 30px;
+}
+.project__info_second{
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 120%; 
+   
+    padding-bottom: 15px;
+}
+.project__info_span{
+    font-weight: 700;
+}
+.profile__stars{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     
-    
+}
+.alticori{
+    padding: 50px 0;
+}
+.alticori__title{
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+.contatti{
+    padding: 50px 0;
+}
+.contatti__title{
+    font-size: 45px;  
+    text-align: center;
+}
+.contatti_set{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+.contatti__column{
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contatti__column_title{
+    font-family: "Open Sans";
+    font-size: 22px;
+}
+.contatti__social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contatti__wrapp{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contatti__wrapp_text{
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+.error__set{
+   padding: 50px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+}
+.error__title{
+    color: #DEA378;
+    text-align: center;
+    font-size: 300px;
+    font-weight: 400;
+   
+}
+.error__text{   
+    color: #000;
+    text-align: center;
+    width: 787px;
+    font-size: 45px;
+    font-weight: 400;
 }
