@@ -53,13 +53,24 @@ $(document).ready(function() {
         {
           breakpoint: 450,
           settings: {
+            
+            centerMode: true,
+            centerPadding: '0',
+            slidesToShow: 1
+          }
+          
+        },
+        {
+          breakpoint: 374,
+          settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '5px',
+            centerPadding: '0',
             slidesToShow: 1
           }
           
         }
+        
         
       ]
     });

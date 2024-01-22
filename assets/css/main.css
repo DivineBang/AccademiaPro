@@ -1591,6 +1591,12 @@ ul,li{
         width: auto;
         height: 300px;
     }
+    .slick-next{
+        right: 30%;
+    }
+    .slick-prev{
+        left: 30%;
+    }
 }
 /*320-374*/
 @media screen and (max-width:374px){
