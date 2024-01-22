@@ -152,12 +152,11 @@ ul,li{
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.50);
     box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.40);
-}
-.form{
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 40px 48px;
+    justify-content: center;
 }
 .form__title{
     font-family: 'Roboto', sans-serif;
@@ -218,17 +217,24 @@ ul,li{
     flex-wrap: wrap;
     gap: 100px;
 }
-.come__wrapp{
+.come__wrapp {
     display: flex;
     gap: 35px;
     margin-right: 45px;
 }
-.come__circle{
+
+.come__circle {
     padding: 30px;
     width: 100px;
     height: 100px;
-    border-radius: 50px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
     border: 1px solid #0072DC;
+}
+.come__circle_img{
+    width: 40px;
+    height: 40px;
 }
 .come__column{
     width: 415px;
@@ -795,7 +801,7 @@ ul,li{
     width: 600px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    
 }
 .editors__name{
     font-size: 25px;
@@ -1086,4 +1092,549 @@ ul,li{
     width: 787px;
     font-size: 45px;
     font-weight: 400;
+}
+.social__first{
+    width: 30px;
+    height: 30px;
+}
+.submenu-trigger{
+    display: none;
+}
+/*1200-1440*/
+@media screen and (max-width:1440px) {
+	.container{
+		max-width: 1140px;
+	}
+    .offer__title{
+        width: 550px;
+    }
+    .come__set{
+        gap: 40px;
+    }
+    .come__wrapp{
+        margin-right: 0;
+    }
+    .why__column {
+        width: 500px;
+    }
+    .better__set{
+        padding: 50px;
+    }
+    .post__set{
+        gap: 20px;
+    }
+    .consultancy__wrapp{
+        width: 550px;
+    }
+    .servizi__set{
+        justify-content: center;
+        gap: 50px;
+    }
+    .what__wrapp_text{
+        font-size: 18px;
+    }
+    .what__wrapp{
+        width: 550px;
+    }
+    .editors__set{
+        padding: 0 0 50px 0;
+    }
+    .esempi__right{
+        width: 550px;
+    }
+    .quale__right{
+        width: 550px;
+    }
+    .contatti__column{
+        width: 550px;
+    }
+
+}
+/*992-1199*/
+@media screen and (max-width:1199px) {
+	.container{
+		max-width: 960px;
+	}
+    .social__second{
+        display: none;
+    }
+    .offer__title{
+        font-size: 40px;
+    }
+    .offer__text{
+        font-size: 15px;
+    }
+    .offer__img:nth-child(4){
+        display: none;
+    }
+    .come__set{
+        gap: 70px;
+    }
+    .why__set{
+        gap: 20px;
+    }
+    .why__wrapp{
+        gap: 15px;
+    }
+    .why__left{
+        width: 400px;
+        height: 400px;
+    }
+    .come__column{
+        width: auto;
+    }
+    .benefits__text{
+        font-size: 15px;
+    }
+    .better__wrapp{
+        gap: 20px;
+    }
+    .better__right{
+        width: 500px;
+    }
+    .post__set{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 70px;
+    }
+    .better__left_img{
+        width: 300px;
+        height: 300px;
+    }
+    .consultancy__wrapp{
+        width: 400px;
+    }
+    .consultancy__text{
+        font-size: 15px;
+    }
+    .found__text{
+        width: 500px;
+        font-size: 25px;
+    }
+    .what__wrapp_text{
+        font-size: 15px;
+    }
+    .what__img{
+        width: 400px;
+        height: 400px;
+    }
+    .what__set{
+        align-items: center;
+    }
+    .what__wrapp{
+        width: 450px;
+    }
+    .editors__right{
+        width: 450px;
+    }
+    .editors__column_text{
+        font-size: 15px;
+    }
+    .esempi__mix{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .esempi__right{
+        width: auto;
+    }
+    .path{
+        font-size: 15px;
+    }
+    .project{
+        width: 100%;
+    }
+    .contatti__column_title{
+        font-size: 18px;
+    }
+    .slick-next{
+        right: 40%;
+    }
+    .slick-prev{
+        left: 40%;
+    }
+}
+
+/*768-991*/
+@media screen and (max-width:991px){
+	.container{
+		max-width: 720px;
+        
+	}
+    .social__set{
+        display: none;
+    }
+    /*  Burger start */
+    .header__menu {
+        display: flex;
+    }
+
+    .burger__img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 999;
+        top: 100px;
+        right: 20px;
+        width: 200px;
+        height: auto;
+        background: #f1f1f1;
+        border-radius: 20px;
+        display: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* добавлен тень */
+    }
+
+    .menu:hover {
+        background: #f1f1f1;
+    }
+
+    .active__menu {
+        display: block;
+        justify-content: center;
+    }
+
+    .menu__item {
+        width: 100% !important;
+        margin: 15px 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu__item_a {
+        text-align: center;
+        color: #000;
+        font-size: 16px;
+        padding: 15px 0;
+        width: 100%;
+    }
+    .submenu-trigger{
+        display: flex;
+    }
+    .submenu-icon {
+        
+        width: 30px;
+        height: 30px;
+        margin-left: auto; /* Поменял местами auto и 5px */
+        cursor: pointer;
+    }
+    /*  Burger end */
+    .offer__box{
+        width: auto;
+    }
+    .offer__set{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .offer__img{
+        display: none;
+    }
+    .offer__title{
+        font-size: 45px;
+    }
+    .why__set{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .why__column{
+        width: auto;
+    }
+    .better__set{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .better__right{
+        width: auto;
+    }
+    .consultancy__set{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .consultancy__wrapp{
+        width: auto;
+    }
+    .footer__first{
+        margin-right: 50px;
+    }
+    .found__set{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .found__text{
+        width: 100%;
+        text-align: center;
+    }
+    .what__title{
+        width: auto;
+    }
+    .what__set{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .what__wrapp{
+        width: auto;
+       
+    }
+    .editors__left_img{
+        width: 300px;
+        height: 300px;
+    }
+    .editors__set{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .editors__right{
+        width: auto;
+    }
+    .path{
+        text-align: center;
+    }
+    .contatti_set{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contatti__column{
+        width: auto;
+    }
+    .what__wrapp{
+        align-items: start;
+    }
+    .what__wrapp_img{
+        margin: 0 auto;
+    }
+    .quale__mix{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .quale__right{
+        width: auto;
+    }
+    .progetti__title{
+        width: auto;
+    }
+}	
+
+/*576-767*/
+@media screen and (max-width:767px){
+	.container{
+		width: 540px;
+		
+	}
+    .slick-next{
+        right: 35%;
+    }
+    .slick-prev{
+        left: 35%;
+    }
+    .post__set {
+        gap: 40px;
+    }
+    .footer__first{
+        margin-right: 0;
+        width: 250px;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer__second{
+        text-align: center;
+    }
+    .footer__third{
+        margin-left: 0;
+        text-align: center;
+    }
+    .footer__set{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .footer__logo{
+        padding-bottom: 0;
+    }
+    .blog__kit{
+        flex-wrap: wrap;
+        
+    }
+    .path {
+        padding: 15px 0;
+    }
+    .progetti__title{
+        font-size: 30px;
+    }
+    .profile__img{
+        width: 80px;
+        height: 80px;
+    }
+    .project{
+        padding-top: 40px;
+    }
+    .project__info_first{
+        font-size: 15px;
+    }
+    .project__info_second{
+        font-size: 15px;
+    }
+    .esempi__text{
+        font-size: 15px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .quale__wrapp_title{
+        font-size: 25px;
+    }
+    .esempi__wrapp_title{
+        font-size: 25px;
+    }
+    .info__wrapp__title{
+        font-size: 25px;
+    }
+    .post__wrapp{
+        height: auto;
+    }
+    .footer__politica{
+        font-size: 15px;
+    }
+    .footer__agreement{
+        font-size: 15px;
+    }
+    .footer__text{
+        font-size: 15px;
+    }
+    .quale__text{
+        font-size: 15px;
+    }
+	.blog__kit{
+        flex-direction: column;
+    }
+}
+/*458-575*/
+@media screen and (max-width:575px){
+	.container{
+		width: 100%;
+		padding: 0 15px;
+        	max-width: 100%;
+	}
+    
+    .offer__title{
+        width: auto;
+    }
+    .come__wrapp{
+        gap: 15px;
+    }
+    .come__column_title{
+        font-size: 20px;
+    }
+    .come__column_text{
+        font-size: 12px;
+    }
+    .come__circle {
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+        border: 1px solid #0072DC;
+        
+    }
+    .come__circle_img{
+        width: 30px;
+        height: 30px;
+    }
+    .offer__title{
+        font-size: 40px;
+    }
+    .form{
+        padding: 20px 28px;
+        width: 100%;
+    }
+    .why__img{
+        width: 40px;
+        height: 40px;
+    }
+    .editors__line{
+        width: 15px;
+    }
+    .what__img{
+        width: 300px;
+        height: 300px;
+    }
+    
+}
+/*375-457*/
+@media screen and (max-width:457px){
+	.container{
+		width: 100%;
+		padding: 0 15px;
+        	max-width: 100%;
+	}
+    .why__left{
+        width: 300px;
+        height: 300px;
+    }
+    .better__set{
+        padding: 20px;
+    }
+    .faq__wrapp_title{
+        width: 90%;
+    }
+    .faq__text{
+        width: 90%;
+    }
+    .found__btn{
+        padding: 10px 30px;
+    }
+    .what__img{
+        width: auto;
+        height: 300px;
+    }
+}
+/*320-374*/
+@media screen and (max-width:374px){
+	.container{
+		width: 100%;
+		padding: 0 15px;
+        	max-width: 100%;
+	}
+    .offer__title{
+        font-size: 30px;
+    } 
+    .form__title{
+        font-size: 25px;
+    }
+    .better__left_img{
+        width: 250px;
+        height: 250px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .esempi__wrapp_title{
+        font-size: 20px;
+    }
+    .better__line{
+        width: 30px;
+    }
+    .what__img{
+        width: 250px;
+        height: 250px;
+    }
+    .progetti__title{
+        font-size: 25px;
+    }
+    .contatti__title{
+        font-size: 35px;
+    }
+    .blog__title{
+        font-size: 35px;
+    }
+    .faq__wrapp_title{
+        width: 85%;
+    }
+    .faq__text{
+        width: 85%;
+    }
 }
