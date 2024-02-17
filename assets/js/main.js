@@ -78,25 +78,19 @@ $(document).ready(function() {
 
 /*   Tab */
 document.querySelectorAll('.faq__wrapp').forEach(faq => {
-    const text = faq.querySelector('.faq__text');
-    const img = faq.querySelector('.faq__wrapp_img');
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('active');
-        if (faq.classList.contains('active')) {
-            text.style.maxHeight = text.scrollHeight + 'px';
-            img.style.transform = 'translateY(-50%) rotate(-45deg)';
-        } else {
-            text.style.maxHeight = '0';
-            img.style.transform = 'translateY(-50%) rotate(0deg)';
-            text.addEventListener('transitionend', () => {
-                if (!faq.classList.contains('active')) {
-                    text.style.display = 'none';
-                }
-            });
-        }
-    });
+  const text = faq.querySelector('.faq__text');
+  const img = faq.querySelector('.faq__wrapp_img');
+  faq.addEventListener('click', () => {
+      faq.classList.toggle('active');
+      if (faq.classList.contains('active')) {
+          text.style.maxHeight = text.scrollHeight + 'px';
+          img.style.transform = 'translateY(-50%) rotate(-45deg)';
+      } else {
+          text.style.maxHeight = '0';
+          img.style.transform = 'translateY(-50%) rotate(0deg)';
+      }
   });
-  
+});
 
 
 
