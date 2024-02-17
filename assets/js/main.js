@@ -127,23 +127,26 @@ var btn = $('#arrow-top');
 
 /* submenu */
 $(document).ready(function () {
-  $('.menu__item').hover(
-      function () {
-          $(this).find('.submenu').stop(true, true).slideDown(200);
-      },
-      function () {
-          var submenu = $(this).find('.submenu');
-          submenu.stop(true, true).slideUp(200, function () {
-              submenu.css('display', ''); // Очистка стиля display после анимации
-          });
-      }
-  );
+  $('.menu__item').mouseenter(function () {
+      var submenu = $(this).find('.submenu');
+      submenu.stop(true, true).slideDown(200);
   });
+
+  $('.menu__item').mouseleave(function () {
+      var submenu = $(this).find('.submenu');
+      submenu.stop(true, true).slideUp(200);
+  });
+
+  $('.submenu a').on('click', function () {
+      $('.submenu').slideUp(200);
+  });
+});
 
 /*  Burger + submenu */
 $(document).ready(function () {
   var isOpen = false;
 
+  // Открывать/закрывать submenu при клике на .submenu-trigger
   $('.submenu-trigger').click(function (event) {
       event.stopPropagation(); // Остановка всплытия события, чтобы оно не дошло до document
       var $submenu = $(this).siblings('.submenu');
@@ -163,7 +166,7 @@ $(document).ready(function () {
       isOpen = !isOpen;
   });
 
-  // Открывать submenu при наведении на menu__item
+  // Открывать submenu при наведении на .menu__item
   $('.menu__item').hover(
       function () {
           var $submenu = $(this).find('.submenu');
@@ -188,12 +191,13 @@ $(document).ready(function () {
       }
   });
 
-  // Открывать/закрывать menu по клику на burger
+  // Открывать/закрывать меню по клику на .header__menu
   $('.header__menu').click(function (event) {
       $('.menu').toggleClass('active__menu');
+      isOpen = false; // Закрывать подменю при открытии/закрытии меню
   });
 
-  // Изменять иконку burger при клике
+  // Изменять иконку .burger__img при клике
   $('.header__menu').click(function (event) {
       var menuImage = $('.burger__img');
       if (menuImage.attr('src') === 'assets/img/burger.png') {
